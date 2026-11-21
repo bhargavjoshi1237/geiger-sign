@@ -90,3 +90,14 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `apps/remix/app/components/general/geiger-source-link.tsx` | 2026-11-21 | "Source code" link to the running version (AGPL-3.0 §13). |
 | `apps/remix/app/routes/_authenticated+/_layout.tsx` | 2026-11-21 | Shows the source link. |
 | `docker/Dockerfile` | 2026-11-21 | `GEIGER_SOURCE_URL` build arg → `NEXT_PUBLIC_GEIGER_SOURCE_URL`. |
+| `packages/lib/translations/de/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/en/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/es/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/fr/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/it/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/ja/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/ko/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/nl/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/pl/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/pt-BR/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/translations/zh/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
