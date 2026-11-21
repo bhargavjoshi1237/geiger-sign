@@ -21,3 +21,27 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx` | 2026-11-21 | "Powered by" badge links to geiger.studio. |
 | `packages/lib/constants/email.ts` | 2026-11-21 | Default sender name/address are Geiger Sign. |
 | `packages/lib/constants/app.ts` | 2026-11-21 | Default PDF signing reason "Signed with Geiger Sign". |
+| `packages/email/template-components/template-admin-user-created.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/template-components/template-branding-logo.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/template-components/template-confirmation-email.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/template-components/template-document-image.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/template-components/template-document-self-signed.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/template-components/template-footer.tsx` | 2026-11-21 | Footer names Geiger Sign and links geiger.studio; removed Documenso's company address. |
+| `packages/email/templates/account-disabled.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/admin-user-created.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/confirm-team-email.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/document-cancel.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/document-completed.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/document-invite.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/document-recipient-signed.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/document-reminder.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/forgot-password.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/organisation-account-link-confirmation.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/organisation-invite.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/organisation-join.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/organisation-leave.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/recipient-expired.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/recipient-removed-by-admin.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/reset-password.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/team-delete.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `packages/email/templates/team-email-removed.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
