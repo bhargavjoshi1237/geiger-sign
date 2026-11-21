@@ -107,3 +107,17 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `packages/lib/server-only/team/create-team-email-verification.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `packages/lib/server-only/team/delete-team.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `.github/workflows/geiger-image.yml` | 2026-11-21 | Builds and publishes the Geiger Sign image to GHCR. |
+| `.github/workflows/ci.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/codeql-analysis.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/deploy.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/e2e-tests.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/first-interaction.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/issue-labeler.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/issue-opened.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/pr-labeler.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/publish.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/semantic-pull-requests.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/stale.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/translations-force-pull.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/translations-pull.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/translations-upload.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
