@@ -106,3 +106,4 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `packages/lib/server-only/organisation/create-organisation-member-invites.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `packages/lib/server-only/team/create-team-email-verification.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `packages/lib/server-only/team/delete-team.ts` | 2026-11-21 | Email subject names Geiger Sign. |
+| `.github/workflows/geiger-image.yml` | 2026-11-21 | Builds and publishes the Geiger Sign image to GHCR. |
