@@ -70,3 +70,20 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `scripts/geiger/assets/og.svg` | 2026-11-21 | Geiger Sign artwork source. |
 | `scripts/geiger/assets/wordmark.svg` | 2026-11-21 | Geiger Sign artwork source. |
 | `scripts/geiger/make-assets.mjs` | 2026-11-21 | Generates the Geiger Sign icons and logos from the SVG sources. |
+| `packages/ui/styles/geiger-theme.css` | 2026-11-21 | Geiger palette values for the theme variables. |
+| `apps/remix/app/app.css` | 2026-11-21 | Imports the Geiger theme after the upstream theme. |
+| `packages/tailwind-config/index.cjs` | 2026-11-21 | `documenso-*` colour scale mapped to Geiger neutrals. |
+| `apps/remix/app/components/dialogs/team-member-create-dialog.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/components/embed/embed-document-completed.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/components/forms/signup.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/components/general/document-signing/document-signing-disclosure.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/components/general/settings-upsell/email-domains-upsell.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.legacy_editor.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id.logs.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id._index.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id.legacy_editor.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_recipient+/report.$token.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_unauthenticated+/signin.tsx` | 2026-11-21 | Readable accent text in dark mode. |

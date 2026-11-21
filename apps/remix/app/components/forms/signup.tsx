@@ -406,7 +406,7 @@ export const SignUpForm = ({
               <p className="mt-4 text-muted-foreground text-sm">
                 <Trans>
                   Already have an account?{' '}
-                  <Link to="/signin" className="text-documenso-700 duration-200 hover:opacity-70">
+                  <Link to="/signin" className="text-documenso-700 dark:text-documenso-300 duration-200 hover:opacity-70">
                     Sign in instead
                   </Link>
                 </Trans>
@@ -436,7 +436,7 @@ export const SignUpForm = ({
                     to={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-documenso-700 duration-200 hover:opacity-70"
+                    className="text-documenso-700 dark:text-documenso-300 duration-200 hover:opacity-70"
                   >
                     {link.label}
                   </Link>

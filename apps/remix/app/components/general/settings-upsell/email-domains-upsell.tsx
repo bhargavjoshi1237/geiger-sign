@@ -86,7 +86,7 @@ export const EmailDomainsUpsell = () => {
                 )}
               >
                 {isBranded ? (
-                  <BadgeCheckIcon className="h-3.5 w-3.5 shrink-0 text-documenso-700" />
+                  <BadgeCheckIcon className="h-3.5 w-3.5 shrink-0 text-documenso-700 dark:text-documenso-300" />
                 ) : (
                   <MailIcon className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
                 )}
@@ -157,7 +157,7 @@ export const EmailDomainsUpsell = () => {
                           transition={{ ...POP, delay: 0.12 }}
                           className="shrink-0"
                         >
-                          <BadgeCheckIcon className="h-3.5 w-3.5 text-documenso-700" />
+                          <BadgeCheckIcon className="h-3.5 w-3.5 text-documenso-700 dark:text-documenso-300" />
                         </motion.span>
                       )}
                     </motion.div>
