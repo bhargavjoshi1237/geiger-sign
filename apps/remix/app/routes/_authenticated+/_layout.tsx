@@ -12,6 +12,7 @@ import { Link, Outlet } from 'react-router';
 import { AppBanner } from '~/components/general/app-banner';
 import { Header } from '~/components/general/app-header';
 import { GenericErrorLayout } from '~/components/general/generic-error-layout';
+import { GeigerSourceLink } from '~/components/general/geiger-source-link';
 import { OrganisationBillingBanner } from '~/components/general/organisations/organisation-billing-banner';
 import { OrganisationQuotaBanner } from '~/components/general/organisations/organisation-quota-banner';
 import { VerifyEmailBanner } from '~/components/general/verify-email-banner';
@@ -127,6 +128,8 @@ export default function Layout({ loaderData, params, matches }: Route.ComponentP
           >
             <Outlet />
           </main>
+
+          {layoutMode !== 'settings' && <GeigerSourceLink />}
         </div>
       </TeamProvider>
     </OrganisationProvider>

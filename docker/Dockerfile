@@ -107,6 +107,10 @@ ENV NEXT_PRIVATE_TELEMETRY_KEY="$NEXT_PRIVATE_TELEMETRY_KEY"
 ARG NEXT_PRIVATE_TELEMETRY_HOST=""
 ENV NEXT_PRIVATE_TELEMETRY_HOST="$NEXT_PRIVATE_TELEMETRY_HOST"
 
+# Geiger Sign: source of this exact build, linked from every page (AGPL-3.0 §13)
+ARG GEIGER_SOURCE_URL="https://github.com/bhargavjoshi1237/geiger-sign"
+ENV NEXT_PUBLIC_GEIGER_SOURCE_URL="$GEIGER_SOURCE_URL"
+
 # Don't run production as root
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nodejs
