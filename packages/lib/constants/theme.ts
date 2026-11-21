@@ -19,32 +19,33 @@ import type { TCssVarsSchema } from '../types/css-vars';
  *
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  */
+// Geiger Sign: light values from `packages/ui/styles/geiger-theme.css` (keys without a Geiger value keep upstream).
 export const DEFAULT_BRAND_COLORS = {
   background: '#ffffff', //              0 0% 100%
-  foreground: '#0f172a', //              222.2 47.4% 11.2%
-  muted: '#f1f5f9', //                   210 40% 96.1%
-  mutedForeground: '#64748b', //         215.4 16.3% 46.9%
+  foreground: '#09090b', //              240 10% 3.9%
+  muted: '#f4f4f5', //                   240 4.8% 95.9%
+  mutedForeground: '#71717a', //         240 3.8% 46.1%
   popover: '#ffffff', //                 0 0% 100%
-  popoverForeground: '#0f172a', //       222.2 47.4% 11.2%
+  popoverForeground: '#09090b', //       240 10% 3.9%
   card: '#ffffff', //                    0 0% 100%
-  cardBorder: '#e2e8f0', //              214.3 31.8% 91.4%
-  cardForeground: '#0f172a', //          222.2 47.4% 11.2%
-  fieldCard: '#e2f8d3', //               95 74% 90%
-  fieldCardBorder: '#a2e771', //         95.08 71.08% 67.45%
-  fieldCardForeground: '#0f172a', //     222.2 47.4% 11.2%
+  cardBorder: '#e4e4e7', //              240 5.9% 90%
+  cardForeground: '#09090b', //          240 10% 3.9%
+  fieldCard: '#f4f4f5', //               240 4.8% 95.9%
+  fieldCardBorder: '#18181b', //         240 5.9% 10%
+  fieldCardForeground: '#09090b', //     240 10% 3.9%
   widget: '#f7f7f7', //                  0 0% 97%
   widgetForeground: '#f2f2f2', //        0 0% 95%
-  border: '#e2e8f0', //                  214.3 31.8% 91.4%
-  input: '#e2e8f0', //                   214.3 31.8% 91.4%
-  primary: '#a2e771', //                 95.08 71.08% 67.45%
-  primaryForeground: '#162c07', //       95.08 71.08% 10%
-  secondary: '#f1f5f9', //               210 40% 96.1%
-  secondaryForeground: '#0f172a', //     222.2 47.4% 11.2%
-  accent: '#f1f5f9', //                  210 40% 96.1%
-  accentForeground: '#0f172a', //        222.2 47.4% 11.2%
-  destructive: '#ff0000', //             0 100% 50%
-  destructiveForeground: '#f8fafc', //   210 40% 98%
-  ring: '#a2e771', //                    95.08 71.08% 67.45%
+  border: '#e4e4e7', //                  240 5.9% 90%
+  input: '#e4e4e7', //                   240 5.9% 90%
+  primary: '#18181b', //                 240 5.9% 10%
+  primaryForeground: '#fafafa', //       0 0% 98%
+  secondary: '#f4f4f5', //               240 4.8% 95.9%
+  secondaryForeground: '#18181b', //     240 5.9% 10%
+  accent: '#f4f4f5', //                  240 4.8% 95.9%
+  accentForeground: '#18181b', //        240 5.9% 10%
+  destructive: '#dc2626', //             0 72.2% 50.6%
+  destructiveForeground: '#fafafa', //   0 0% 98%
+  ring: '#a1a1aa', //                    240 5% 64.9%
   warning: '#e1cb05', //                 54 96% 45%
   envelopeEditorBackground: '#f8fafc', //210 40% 98.04%
   // `cardBorderTint` is intentionally excluded from the colour-picker UI:

@@ -1,6 +1,7 @@
 import backgroundPattern from '@documenso/assets/images/background-pattern.png';
 import { Outlet } from 'react-router';
 
+import { GeigerSourceLink } from '~/components/general/geiger-source-link';
 import { PublicLegalLinks } from '~/components/general/public-legal-links';
 
 export default function Layout() {
@@ -27,6 +28,8 @@ export default function Layout() {
       <footer className="z-10 mt-8 w-full">
         <PublicLegalLinks />
       </footer>
+
+      <GeigerSourceLink className="z-10 pb-0" />
     </main>
   );
 }

@@ -5,14 +5,24 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
-const UPSTREAM_TAG = 'v2.21.1';
+const changeLog = existsSync('GEIGER_CHANGES.md') ? readFileSync('GEIGER_CHANGES.md', 'utf8') : '';
+const UPSTREAM_TAG = changeLog.match(/\*\*Upstream base:\*\* `(v[^`]+)`/)?.[1];
+
+if (!UPSTREAM_TAG) {
+  console.error('GEIGER_CHANGES.md: no "**Upstream base:** `vX.Y.Z`" line, so the upstream tag is unknown.');
+  process.exit(1);
+}
 
 const SURFACES = [
   'apps/remix/app/routes/_recipient+',
   'apps/remix/app/utils/meta.ts',
   'apps/remix/app/components/general/document-signing',
   'apps/remix/app/components/general/envelope-signing',
+  'apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx',
+  'apps/remix/app/routes/_share+/share.$slug.tsx',
   'apps/remix/public/site.webmanifest',
+  'packages/ui/components/document/document-share-button.tsx',
+  'packages/lib/constants/app.ts',
   'packages/email/templates',
   'packages/email/template-components',
   'packages/lib/constants/email.ts',
@@ -23,12 +33,15 @@ const SURFACES = [
   'packages/lib/server-only/team/delete-team.ts',
 ];
 
-const BRAND = /\bDocumenso\b|documenso\.com|documen\.so/;
-const SKIP_LINE = /@documenso\/|^\s*(\/\/|\*|\/\*)/;
+const BRAND = /\bDocumenso\b|documenso\.com|documen\.so|@documenso\b(?!\/)/;
+// Skips imports, comments and Documenso Cloud-only values (inert on a self-hosted fork, never signer-facing).
+const SKIP_LINE = /@documenso\/|^\s*(\/\/|\*|\/\*)|IS_DOCUMENSO_CLOUD\(\)|DOCUMENSO_CLOUD_/;
 
 const SOURCE_LINK_FILES = [
   'apps/remix/app/routes/_recipient+/_layout.tsx',
   'apps/remix/app/routes/_authenticated+/_layout.tsx',
+  'apps/remix/app/routes/_unauthenticated+/_layout.tsx',
+  'apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx',
 ];
 
 const walk = (path) => (statSync(path).isDirectory() ? readdirSync(path).flatMap((name) => walk(join(path, name))) : [path]);
@@ -48,7 +61,6 @@ for (const file of SOURCE_LINK_FILES) {
   if (!readFileSync(file, 'utf8').includes('<GeigerSourceLink')) problems.push(`${file}: missing <GeigerSourceLink />`);
 }
 
-const changeLog = existsSync('GEIGER_CHANGES.md') ? readFileSync('GEIGER_CHANGES.md', 'utf8') : '';
 const changed = new Set([...git('diff', '--name-only', UPSTREAM_TAG), ...git('ls-files', '--others', '--exclude-standard')]);
 
 for (const file of changed) {

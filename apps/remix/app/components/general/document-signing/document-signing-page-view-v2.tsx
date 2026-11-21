@@ -30,6 +30,7 @@ import { SignFieldSignatureDialog } from '~/components/dialogs/sign-field-signat
 import { SignFieldTextDialog } from '~/components/dialogs/sign-field-text-dialog';
 import { useEmbedSigningContext } from '~/components/embed/embed-signing-context';
 import { EnvelopeSignerPageRenderer } from '~/components/general/envelope-signing/envelope-signer-page-renderer';
+import { GeigerSourceLink } from '~/components/general/geiger-source-link';
 import { EnvelopePdfViewer } from '~/components/general/pdf-viewer/envelope-pdf-viewer';
 import { PublicLegalLinks } from '~/components/general/public-legal-links';
 
@@ -234,6 +235,8 @@ export const DocumentSigningPageViewV2 = () => {
               )}
 
               {!isEmbed && <PublicLegalLinks className="mt-4 justify-start px-4 pt-4" />}
+
+              <GeigerSourceLink className="justify-start px-4 pt-2 pb-0" />
             </div>
           </div>
         </div>
@@ -281,6 +284,7 @@ export const DocumentSigningPageViewV2 = () => {
 
               {/* Mobile widget - Additional padding to allow users to scroll */}
               <div className="block pb-28 lg:hidden">
+                <GeigerSourceLink className="pt-6" />
                 <DocumentSigningMobileWidget />
               </div>
 

@@ -5,8 +5,10 @@ distributed under the GNU Affero General Public License v3.0 (see `LICENSE`). Do
 Documenso, Inc.; Geiger Sign is not affiliated with or endorsed by Documenso, Inc.
 
 - **Upstream base:** `v2.21.1`
-- **Source of the running service:** linked from every page ("Source code").
+- **Source of the running service:** linked from the signing pages, sign-in and account pages, and the app ("Source code").
 - **Not modified:** `packages/ee` (Documenso Commercial License) — not modified and not enabled.
+
+The production container adds a small boot script (env + signing certificate) published at https://github.com/bhargavjoshi1237/geiger-docs/tree/master/deploy/documenso/render.
 
 Every file below differs from the upstream base. Dates are when the change was made.
 
@@ -14,13 +16,13 @@ Every file below differs from the upstream base. Dates are when the change was m
 |---|---|---|
 | `GEIGER_CHANGES.md` | 2026-11-21 | This list of modifications (AGPL-3.0 §5a). |
 | `README.md` | 2026-11-21 | Geiger Sign header above the upstream README. |
-| `scripts/geiger/check-branding.mjs` | 2026-11-21 | Branding and licence-compliance check (incl. email subject lines). |
+| `scripts/geiger/check-branding.mjs` | 2026-11-21 | Branding and licence-compliance check (incl. email subject lines); reads the upstream tag from this file. |
 | `apps/remix/app/utils/meta.ts` | 2026-11-21 | Page titles and meta tags name Geiger Sign; noindex. |
 | `apps/remix/app/routes/_recipient+/_layout.tsx` | 2026-11-21 | Signer tab title "Sign Document - Geiger Sign"; shows the source link. |
-| `apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx` | 2026-11-21 | Removed the "Check out Documenso" upsell for signed-out signers. |
-| `apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx` | 2026-11-21 | "Powered by" badge links to geiger.studio. |
+| `apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx` | 2026-11-21 | Removed the "Check out Documenso" upsell for signed-out signers; readable accent text in dark mode. |
+| `apps/remix/app/components/general/document-signing/document-signing-page-view-v2.tsx` | 2026-11-21 | "Powered by" badge links to geiger.studio; shows the source link in the sidebar footer and on mobile. |
 | `packages/lib/constants/email.ts` | 2026-11-21 | Default sender name/address are Geiger Sign. |
-| `packages/lib/constants/app.ts` | 2026-11-21 | Default PDF signing reason "Signed with Geiger Sign". |
+| `packages/lib/constants/app.ts` | 2026-11-21 | Default PDF signing reason "Signed with Geiger Sign"; default support email support@geiger.studio. |
 | `packages/email/template-components/template-admin-user-created.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
 | `packages/email/template-components/template-branding-logo.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
 | `packages/email/template-components/template-confirmation-email.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
@@ -70,7 +72,7 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `scripts/geiger/assets/og.svg` | 2026-11-21 | Geiger Sign artwork source. |
 | `scripts/geiger/assets/wordmark.svg` | 2026-11-21 | Geiger Sign artwork source. |
 | `scripts/geiger/make-assets.mjs` | 2026-11-21 | Generates the Geiger Sign icons and logos from the SVG sources. |
-| `packages/ui/styles/geiger-theme.css` | 2026-11-21 | Geiger palette values for the theme variables. |
+| `packages/ui/styles/geiger-theme.css` | 2026-11-21 | Geiger palette values for the theme variables (dark destructive lightened so error text is readable). |
 | `apps/remix/app/app.css` | 2026-11-21 | Imports the Geiger theme after the upstream theme. |
 | `packages/tailwind-config/index.cjs` | 2026-11-21 | `documenso-*` colour scale mapped to Geiger neutrals. |
 | `apps/remix/app/components/dialogs/team-member-create-dialog.tsx` | 2026-11-21 | Readable accent text in dark mode. |
@@ -84,9 +86,15 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id._index.tsx` | 2026-11-21 | Readable accent text in dark mode. |
 | `apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id.legacy_editor.tsx` | 2026-11-21 | Readable accent text in dark mode. |
 | `apps/remix/app/routes/_recipient+/report.$token.tsx` | 2026-11-21 | Readable accent text in dark mode. |
-| `apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx` | 2026-11-21 | Readable accent text in dark mode. |
-| `apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx` | 2026-11-21 | Readable accent text in dark mode; no "share on Twitter" button for signers. |
 | `apps/remix/app/routes/_unauthenticated+/signin.tsx` | 2026-11-21 | Readable accent text in dark mode. |
+| `apps/remix/app/components/forms/signin.tsx` | 2026-11-21 | Sign-in button readable in dark mode. |
+| `packages/lib/constants/theme.ts` | 2026-11-21 | Default brand colours (emails, branding form) use the Geiger light palette. |
+| `apps/remix/app/routes/_unauthenticated+/_layout.tsx` | 2026-11-21 | Shows the source link on sign-in and account pages. |
+| `apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx` | 2026-11-21 | Signature disclosure names Geiger Sign as the service. |
+| `apps/remix/app/routes/_share+/share.$slug.tsx` | 2026-11-21 | Share page meta names Geiger Sign; redirects to geiger.studio. |
+| `packages/ui/components/document/document-share-button.tsx` | 2026-11-21 | Share text names Geiger Sign (no social handle). |
+| `packages/lib/constants/app.test.ts` | 2026-11-21 | Expects the Geiger Sign signing reason. |
 | `apps/remix/app/components/general/geiger-source-link.tsx` | 2026-11-21 | "Source code" link to the running version (AGPL-3.0 §13). |
 | `apps/remix/app/routes/_authenticated+/_layout.tsx` | 2026-11-21 | Shows the source link. |
 | `docker/Dockerfile` | 2026-11-21 | `GEIGER_SOURCE_URL` build arg → `NEXT_PUBLIC_GEIGER_SOURCE_URL`. |
@@ -107,17 +115,17 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `packages/lib/server-only/team/create-team-email-verification.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `packages/lib/server-only/team/delete-team.ts` | 2026-11-21 | Email subject names Geiger Sign. |
 | `.github/workflows/geiger-image.yml` | 2026-11-21 | Builds and publishes the Geiger Sign image to GHCR. |
-| `.github/workflows/ci.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/codeql-analysis.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/deploy.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/e2e-tests.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/first-interaction.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/issue-labeler.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/issue-opened.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/pr-labeler.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/publish.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/semantic-pull-requests.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/stale.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/translations-force-pull.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/translations-pull.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
-| `.github/workflows/translations-upload.yml` | 2026-11-21 | Removed: upstream Documenso workflow (needs Documenso's secrets; would fire on this fork). |
+| `.github/workflows/ci.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/codeql-analysis.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/deploy.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/e2e-tests.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/first-interaction.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/issue-labeler.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/issue-opened.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/pr-labeler.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/publish.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/semantic-pull-requests.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/stale.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/translations-force-pull.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/translations-pull.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |
+| `.github/workflows/translations-upload.yml` | 2026-11-21 | Removed: upstream Documenso CI/automation, not used on this fork (would fire on its events or needs Documenso's secrets). |

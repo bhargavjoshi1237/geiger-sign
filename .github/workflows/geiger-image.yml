@@ -1,4 +1,4 @@
-# Geiger Sign: build the Docker image and publish it to GHCR. Upstream Documenso workflows are disabled on this fork.
+# Geiger Sign: build the Docker image and publish it to GHCR. Upstream Documenso workflows are removed from this fork.
 name: Geiger Sign image
 
 on:
