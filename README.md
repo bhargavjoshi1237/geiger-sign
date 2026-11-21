@@ -1,3 +1,7 @@
+> **Geiger Sign** is the Geiger suite's signing service: a modified version of Documenso, licensed under
+> AGPL-3.0 like the original. What we changed and why is listed in [`GEIGER_CHANGES.md`](GEIGER_CHANGES.md).
+> The upstream README follows unchanged.
+
 <img src="https://github.com/documenso/documenso/assets/13398220/a643571f-0239-46a6-a73e-6bef38d1228b" alt="Documenso Logo">
 
 <p align="center" style="margin-top: 20px">
