@@ -14,7 +14,7 @@ Every file below differs from the upstream base. Dates are when the change was m
 |---|---|---|
 | `GEIGER_CHANGES.md` | 2026-11-21 | This list of modifications (AGPL-3.0 §5a). |
 | `README.md` | 2026-11-21 | Geiger Sign header above the upstream README. |
-| `scripts/geiger/check-branding.mjs` | 2026-11-21 | Branding and licence-compliance check. |
+| `scripts/geiger/check-branding.mjs` | 2026-11-21 | Branding and licence-compliance check (incl. email subject lines). |
 | `apps/remix/app/utils/meta.ts` | 2026-11-21 | Page titles and meta tags name Geiger Sign; noindex. |
 | `apps/remix/app/routes/_recipient+/_layout.tsx` | 2026-11-21 | Signer tab title "Sign Document - Geiger Sign"; shows the source link. |
 | `apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx` | 2026-11-21 | Removed the "Check out Documenso" upsell for signed-out signers. |
@@ -101,3 +101,8 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `packages/lib/translations/pl/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
 | `packages/lib/translations/pt-BR/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
 | `packages/lib/translations/zh/web.po` | 2026-11-21 | Catalogue re-extracted for the renamed strings. |
+| `packages/lib/jobs/definitions/emails/send-account-disabled-email.handler.ts` | 2026-11-21 | Email subject names Geiger Sign. |
+| `packages/lib/jobs/definitions/emails/send-admin-user-created-email.handler.ts` | 2026-11-21 | Email subject names Geiger Sign. |
+| `packages/lib/server-only/organisation/create-organisation-member-invites.ts` | 2026-11-21 | Email subject names Geiger Sign. |
+| `packages/lib/server-only/team/create-team-email-verification.ts` | 2026-11-21 | Email subject names Geiger Sign. |
+| `packages/lib/server-only/team/delete-team.ts` | 2026-11-21 | Email subject names Geiger Sign. |

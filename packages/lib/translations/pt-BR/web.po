@@ -1163,8 +1163,8 @@ msgstr ""
 
 #. placeholder {0}: team.name
 #: packages/lib/server-only/team/create-team-email-verification.ts
-msgid "A request to use your email has been initiated by {0} on Documenso"
-msgstr "Uma solicitação para usar seu e-mail foi iniciada por {0} no Documenso"
+msgid "A request to use your email has been initiated by {0} on Geiger Sign"
+msgstr ""
 
 #: apps/remix/app/components/dialogs/webhook-create-dialog.tsx
 #: apps/remix/app/components/dialogs/webhook-edit-dialog.tsx
@@ -11777,8 +11777,8 @@ msgstr "Equipe"
 
 #. placeholder {0}: team.name
 #: packages/lib/server-only/team/delete-team.ts
-msgid "Team \"{0}\" has been deleted on Documenso"
-msgstr "A equipe \"{0}\" foi excluída no Documenso"
+msgid "Team \"{0}\" has been deleted on Geiger Sign"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.analytics._index.tsx
 msgid "Team activity"
@@ -14863,7 +14863,7 @@ msgid "Welcome to {organisationName}"
 msgstr "Bem-vindo à {organisationName}"
 
 #: packages/lib/jobs/definitions/emails/send-admin-user-created-email.handler.ts
-msgid "Welcome to Documenso"
+msgid "Welcome to Geiger Sign"
 msgstr ""
 
 #: packages/email/template-components/template-admin-user-created.tsx
@@ -15365,8 +15365,8 @@ msgstr ""
 
 #. placeholder {0}: organisation.name
 #: packages/lib/server-only/organisation/create-organisation-member-invites.ts
-msgid "You have been invited to join {0} on Documenso"
-msgstr "Você foi convidado para participar de {0} no Documenso"
+msgid "You have been invited to join {0} on Geiger Sign"
+msgstr ""
 
 #: apps/remix/app/routes/_unauthenticated+/organisation.invite.$token.tsx
 msgid "You have been invited to join <0>{organisationName}</0> on Documenso."
@@ -15906,10 +15906,6 @@ msgstr "Seu plano atual está vencido."
 msgid "Your direct signing templates"
 msgstr "Seus modelos de assinatura direta"
 
-#: packages/lib/jobs/definitions/emails/send-account-disabled-email.handler.ts
-msgid "Your Documenso account has been disabled"
-msgstr ""
-
 #: apps/remix/app/components/dialogs/ai-features-enable-dialog.tsx
 msgid "Your document content will be sent securely to our AI provider solely for detection and will not be stored or used for training."
 msgstr ""
@@ -16008,6 +16004,7 @@ msgid "Your envelope has been resent successfully."
 msgstr "Seu envelope foi reenviado com sucesso."
 
 #: packages/email/templates/account-disabled.tsx
+#: packages/lib/jobs/definitions/emails/send-account-disabled-email.handler.ts
 msgid "Your Geiger Sign account has been disabled"
 msgstr ""
 

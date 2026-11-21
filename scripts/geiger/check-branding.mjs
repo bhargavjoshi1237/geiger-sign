@@ -16,6 +16,11 @@ const SURFACES = [
   'packages/email/templates',
   'packages/email/template-components',
   'packages/lib/constants/email.ts',
+  'packages/lib/jobs/definitions/emails/send-account-disabled-email.handler.ts',
+  'packages/lib/jobs/definitions/emails/send-admin-user-created-email.handler.ts',
+  'packages/lib/server-only/organisation/create-organisation-member-invites.ts',
+  'packages/lib/server-only/team/create-team-email-verification.ts',
+  'packages/lib/server-only/team/delete-team.ts',
 ];
 
 const BRAND = /\bDocumenso\b|documenso\.com|documen\.so/;
