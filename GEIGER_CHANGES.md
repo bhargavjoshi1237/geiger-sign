@@ -45,3 +45,28 @@ Every file below differs from the upstream base. Dates are when the change was m
 | `packages/email/templates/reset-password.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
 | `packages/email/templates/team-delete.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
 | `packages/email/templates/team-email-removed.tsx` | 2026-11-21 | Product name, links and contact addresses read Geiger Sign. |
+| `apps/remix/app/components/general/branding-logo.tsx` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/app/components/general/branding-logo-icon.tsx` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/android-chrome-192x192.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/android-chrome-512x512.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/apple-touch-icon.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/favicon.ico` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/favicon-16x16.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/favicon-32x32.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/opengraph-image.jpg` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `apps/remix/public/site.webmanifest` | 2026-11-21 | App name Geiger Sign. |
+| `apps/remix/public/static/logo.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/android-chrome-192x192.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/android-chrome-512x512.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/apple-touch-icon.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/favicon.ico` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/favicon-16x16.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/favicon-32x32.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/logo.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/assets/static/logo.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `packages/email/static/logo.png` | 2026-11-21 | Geiger Sign logo, icons and share image. |
+| `scripts/geiger/assets/icon.svg` | 2026-11-21 | Geiger Sign artwork source. |
+| `scripts/geiger/assets/mark.svg` | 2026-11-21 | Geiger Sign artwork source. |
+| `scripts/geiger/assets/og.svg` | 2026-11-21 | Geiger Sign artwork source. |
+| `scripts/geiger/assets/wordmark.svg` | 2026-11-21 | Geiger Sign artwork source. |
+| `scripts/geiger/make-assets.mjs` | 2026-11-21 | Generates the Geiger Sign icons and logos from the SVG sources. |
